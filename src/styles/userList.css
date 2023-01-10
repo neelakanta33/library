@@ -1,0 +1,46 @@
+.user {
+    border: 3px solid black;
+    height: 320px;
+    width: 400px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 8px grey;
+    border-radius: 5px;
+}
+
+.user_section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 100px;
+}
+
+.user {
+    background-color: black;
+    color: antiquewhite;
+    border: 1px solid antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+}
+
+.user b {
+    border-bottom: 1px solid antiquewhite;
+}
+
+.user #but1 {
+    background-color: antiquewhite;
+    color: black;
+    border: 2px solid black;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+#but1:hover {
+    background-color: black;
+    color: antiquewhite;
+    border: 1px solid white;
+}
+
+.userList {
+    background-color: silver;
+}

@@ -1,0 +1,78 @@
+.book {
+    height: 250px;
+    width: 550px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    text-align: center;
+    color: antiquewhite;
+    border: 1px solid antiquewhite;
+}
+
+.image {
+    background-color: rgba(128, 128, 128, 0.72);
+    width: 300px;
+}
+
+.image img {
+    position: relative;
+    top: 30px;
+    height: 250px;
+}
+
+.block {
+    display: flex;
+    margin: 30px auto;
+    height: 300px;
+    width: 900px;
+    border: 0;
+    box-shadow: 10px 10px 8px gray;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.book b {
+    border-bottom: 1px solid antiquewhite;
+    padding-bottom: 2px;
+}
+
+.book #but {
+    background-color: antiquewhite;
+    color: black;
+    border: 2px solid white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 0px 5px;
+}
+
+#but:hover {
+    background-color: black;
+    color: white;
+}
+
+.books_section {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bookList {
+    background-color: silver;
+    margin: 0;
+}
+
+#hea {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    position: relative;
+    top: 10px;
+    left: 310px;
+    background-color: black;
+    color: antiquewhite;
+    width: 900px;
+    border-radius: 5px;
+}
+
+#hed {
+    font-family: 'Times New Roman', Times, serif;
+}

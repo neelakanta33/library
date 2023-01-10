@@ -1,0 +1,62 @@
+.landingpage {
+    margin: 0;
+    background-image: url('E:\web_technlogies\react js\library_management_system\public\images\bk');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+
+.selectLoginType #user {
+    text-decoration: none;
+    border: 3px solid black;
+    padding: 10px 30px;
+    margin: 0px 80px;
+    margin-top: 100px;
+    position: relative;
+    top: 50px;
+    border-color: green;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.selectLoginType #he {
+    padding-top: 80px;
+}
+
+.selectLoginType #admin {
+    text-decoration: none;
+    border: 3px solid orange;
+    padding: 10px 30px;
+    margin: 0px 80px;
+    margin-top: 100px;
+    position: relative;
+    top: 50px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.selectLoginType {
+    background-color: white;
+    height: 450px;
+    width: 800px;
+    position: relative;
+    top: 100px;
+    left: 350px;
+    box-shadow: 20px 20px 10px black;
+}
+
+.logos img {
+    margin: 0px 130px;
+    margin-top: 50px;
+}
+
+#admin:hover {
+    background-color: orange;
+    color: white;
+}
+
+#user:hover {
+    background-color: green;
+    color: white;
+}
