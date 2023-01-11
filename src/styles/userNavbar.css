@@ -1,0 +1,58 @@
+.userNavbar {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    height: 60px;
+}
+
+.links li {
+    display: inline;
+    padding: 0px 30px;
+}
+
+.logo h1 {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.logo {
+    margin-right: 200px;
+    display: flex;
+}
+
+.logo #ad {
+    color: yellow;
+}
+
+.links {
+    margin-left: 50px;
+    margin-top: 2px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.links a:hover {
+    color: yellow;
+    border-bottom: 1px solid yellow;
+    transition: 1s;
+}
+
+.logout a {
+    text-decoration: none;
+    color: white;
+}
+
+.logout {
+    position: relative;
+    right: 50px;
+    top: 17px;
+}
+
+.logout a:hover {
+    color: red;
+    border-bottom: 1px solid red;
+}

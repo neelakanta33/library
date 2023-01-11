@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import "../styles/bookList.css";
 
-
 const BookList = () => {
+  //useloaction (fetchs total path )
   let [books, setBooks] = useState([]);
+  let location = useLocation();
   useEffect(() => {
     let fetchData = async () => {
       let response = await fetch("http://localhost:1006/books");
@@ -13,7 +14,7 @@ const BookList = () => {
     };
     fetchData();
   }, [books]);
-  
+
   //delete a book from server
   let remove = (title, id) => {
     fetch(`http://localhost:1006/books/${id}`, {
@@ -23,7 +24,12 @@ const BookList = () => {
   };
   let navigate = useNavigate();
   let read = (id) => {
-    navigate(`/admin/book-list/${id}`);
+if (location.pathname=='/admin/book-list') {
+  navigate(`/admin/book-list/${id}`);
+
+} else {
+  navigate(`/user/book-list/${id}`)
+}
   };
   return (
     <div className="bookList">
@@ -53,9 +59,12 @@ const BookList = () => {
               <button id="but" onClick={() => read(x.id)}>
                 Read More
               </button>
-              <button id="but" onClick={() => remove(x.title, x.id)}>
-                Delete
-              </button>
+
+              {location.pathname == "/admin/book-list" && (
+                <button id="but" onClick={() => remove(x.title, x.id)}>
+                  Delete
+                </button>
+              )}
             </div>
           </div>
         ))}
